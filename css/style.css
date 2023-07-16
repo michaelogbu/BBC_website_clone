@@ -11,6 +11,10 @@
     width: 95%;
     margin: 0 auto;
 }
+.active{
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
 /*
 ========== 
 NAVIGATION
@@ -323,27 +327,28 @@ end
 */
 
 
-.bars{
+.bar{
     width: 30px;
     height: 30px;
     cursor: pointer;
-    display: none;
+    /* display: none; */
     padding: 2px;
 }
 .dots{
     width: 30px;
     height: 20px;
     cursor: pointer;
+    display: none;
 }
 /*
 ---------
 dotsLink
 ---------
 */
-#showMenu{
+.showMenu{
     position: relative;
 }
-#showMenu::after{
+.showMenu::after{
     position: absolute;
     content: "";
     bottom: 0;
@@ -353,7 +358,7 @@ dotsLink
     background-color: #fff;
     transition: all 0.3s ease-in;
 }
-#showMenu:hover::after{
+.showMenu:hover::after{
     width: 100%;
     transition: all 0.3s ease;
 }
@@ -393,17 +398,19 @@ end
 
 
 .navContainerBottom{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
-    width: 96%;
-    display: none;
-    margin-top: 5px;
+    margin: 5px;
+}
+.navContainerBottom.activeNav{
+    display: flex;
+    transition: all 5s ease-in-out;
 }
 .navBootomContainer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .bottomLink{
     color: #fff;
@@ -413,10 +420,7 @@ end
     font-size: 15px;
     font-weight: 700;
 }
-.times{
-    height: 30px;
-    cursor: pointer;
-}
+
 /*
 ---------
 timesLink
@@ -445,3 +449,7 @@ timesLink
 end
 ----
 */
+.times{
+    height: 30px;
+    cursor: pointer;
+}
