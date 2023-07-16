@@ -1,12 +1,10 @@
-// NAVIGATION
+// ================ NAVIGATION ==================
 const navContainer = document.querySelector(".navBootomContainer")
 const closeMenu = document.querySelector(".times")
 const showMenu = document.querySelectorAll(".bars")
 
 
-// console.log(navContainer.parentElement);
-
-const menuShow = function(){
+const menuShow = () => {
     const active = document.querySelector('.activeNav')
     const bottomNavParent = navContainer.parentElement
     // console.log(bottomNavParent);
@@ -16,19 +14,27 @@ const menuShow = function(){
         bottomNavParent.classList.remove('activeNav')
     }
 }
+const menuHide = () => {
+    const active = document.querySelector('.activeNav')
+    const bottomNavParent = navContainer.parentElement
+    if (bottomNavParent.classList.contains('activeNav')) {
+        bottomNavParent.classList.remove('activeNav')
+    }
+}
 
-// menuShow()
 showMenu.forEach((Btn) => {
     Btn.addEventListener('click', (e) => {
         const btn = e.target
         // console.log(btn);
         if (btn.classList.contains('dots')) {
             menuShow()
-            // console.log(123);
         }
         if (btn.classList.contains('bar')) {
             menuShow()
         }
     })
 })
-
+closeMenu.addEventListener('click', function() {
+    menuHide()
+})
+// ================ END OF NAVIGATION ==================

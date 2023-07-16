@@ -5,7 +5,7 @@
     font-family: sans-serif;
     list-style-type: none;
     text-decoration: none;
-
+    outline: none;
 }
 .contain{
     width: 95%;
@@ -39,7 +39,7 @@ nav{
 
 .logo img{
     height: 45px;
-    margin-right: 10px;
+    margin-right: 6px;
     padding: 2px;
 }
 /*
@@ -331,14 +331,14 @@ end
     width: 30px;
     height: 30px;
     cursor: pointer;
-    /* display: none; */
+    display: none;
     padding: 2px;
 }
 .dots{
     width: 30px;
     height: 20px;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 /*
 ---------
@@ -412,6 +412,9 @@ end
     align-items: center;
     /* justify-content: space-between; */
 }
+.small{
+    display: none;
+}
 .bottomLink{
     color: #fff;
     text-transform: capitalize;
@@ -420,6 +423,90 @@ end
     font-size: 15px;
     font-weight: 700;
 }
+/*
+---------
+tvLink
+---------
+*/
+#tv{
+    position: relative;
+}
+
+#tv::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #588d35;
+    transition: all 0.3s ease-in;
+}
+#tv:hover::after{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+/*
+----
+end
+----
+*/
+/*
+---------
+weatherLink
+---------
+*/
+#weather{
+    position: relative;
+}
+
+#weather::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff7300;
+    transition: all 0.3s ease-in;
+}
+#weather:hover::after{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+/*
+----
+end
+----
+*/
+/*
+---------
+tvLink
+---------
+*/
+#sounds{
+    position: relative;
+}
+
+#sounds::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00e1ff;
+    transition: all 0.3s ease-in;
+}
+#sounds:hover::after{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+/*
+----
+end
+----
+*/
 
 /*
 ---------
@@ -452,4 +539,91 @@ end
 .times{
     height: 30px;
     cursor: pointer;
+}
+
+/* ====== SMALL SCREEN DEVICES =======*/
+/*
+========== 
+NAVIGATION
+==========
+*/
+@media screen and (max-width: 500px) {
+    .navContainer{
+        position: relative;
+    }
+    
+    .logo img{
+        position: absolute;
+        left: 160px;
+        top: 11px;
+        height: 40px;
+    }
+    .signin{
+        position: absolute;
+        left: 22px;
+        top: 11px;
+        height: 40px;
+        padding-right: 1px;
+    }
+    .signinPara{
+        display: none;
+    }
+    .navhoriLine{
+        opacity: 0;
+    }
+    .navLinkContainer{
+        display: none;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        left: 220px;
+        top: -18px;
+        width: 40px;
+        height: 40px;
+    }
+    .dots{
+        display: none;
+    }
+    .navSearch{
+        background: transparent;
+        border: none;
+        
+    }
+    .search{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 19px;
+        top: 12px;
+    }
+    .searchPara{
+        display: none;
+    }
+    .navVatiiLine{
+        display: none;
+    }
+
+    .navContainerBottom{
+        height: 50vw;
+        position: relative;
+        margin-top: 10px;
+    }
+    .navBootomContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        place-content: center;
+        width: 80%;
+    }
+    .small{
+        display: block;
+    }
+    .bottomLink{
+        padding: 5px;
+        margin-right: 1px;
+    }
+    #hideMenu{
+        margin-top: -200px;
+    }
 }
