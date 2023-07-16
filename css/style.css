@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.contain{
+    width: 95%;
+    margin: 0 auto;
+}
+/*
+========== 
+NAVIGATION
+==========
+*/
+nav{
+    background-color: #000;
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+}
+.navContainerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.logo img{
+    height: 45px;
+    margin-right: 10px;
+    padding: 2px;
+}
+/*
+----------
+signinLink
+----------
+*/
+.signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+    position: relative;
+}
+.signin::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1bacd8;
+    transition: all 0.3s ease-in;
+}
+.signin:hover::after{
+    width: 100%;
+    transition: all 0.3 ease-in;
+}
+.signin img{
+    height: 45px;
+    padding: 2px;
+
+}
+.signin .signinPara{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+/*
+----
+end
+----
+*/
+.navhoriLine{
+    border-right: 1px solid #363434;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.navLinkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLink{
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+/*
+--------
+homeLink
+--------
+*/
+#home{
+    position: relative;
+}
+#home::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+}
+#home:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+--------
+newsLink
+--------
+*/
+#news{
+    position: relative;
+}
+#news::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d81b1b;
+    transition: all 0.3s ease-in;
+}
+#news:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+---------
+sportLink
+---------
+*/
+#sport{
+    position: relative;
+}
+#sport::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d8cb1b;
+    transition: all 0.3s ease-in;
+}
+#sport:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+---------
+reelLink
+---------
+*/
+#reel{
+    position: relative;
+}
+#reel::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1bacd8;
+    transition: all 0.3s ease-in;
+}
+#reel:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+---------
+worklifeLink
+---------
+*/
+#worklife{
+    position: relative;
+}
+#worklife::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #16328d;
+    transition: all 0.3s ease-in;
+}
+#worklife:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+---------
+travelLink
+---------
+*/
+#travel{
+    position: relative;
+}
+#travel::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0b7213;
+    transition: all 0.3s ease-in;
+}
+#travel:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+---------
+futureLink
+---------
+*/
+#future{
+    position: relative;
+}
+#future::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #394379;
+    transition: all 0.3s ease-in;
+}
+#future:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+/*
+---------
+cultureLink
+---------
+*/
+#culture{
+    position: relative;
+}
+#culture::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8115b3;
+    transition: all 0.3s ease-in;
+}
+#culture:hover::after{
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+/*
+----
+end
+----
+*/
+
+
+.bars{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    padding: 2px;
+}
+.dots{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+/*
+---------
+dotsLink
+---------
+*/
+#showMenu{
+    position: relative;
+}
+#showMenu::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+}
+#showMenu:hover::after{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+/*
+----
+end
+----
+*/
+
+.navSearch{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #333;
+    width: 300px;
+}
+.search{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.searchPara{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.navVatiiLine{
+    border-bottom: 1px solid #363434;
+    width: 95%;
+}
+
+
+
+.navContainerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    display: none;
+    margin-top: 5px;
+}
+.navBootomContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottomLink{
+    color: #fff;
+    text-transform: capitalize;
+    margin-right: 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.times{
+    height: 30px;
+    cursor: pointer;
+}
+/*
+---------
+timesLink
+---------
+*/
+#hideMenu{
+    position: relative;
+}
+
+#hideMenu::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+}
+#hideMenu:hover::after{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+/*
+----
+end
+----
+*/
