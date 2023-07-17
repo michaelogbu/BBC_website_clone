@@ -673,7 +673,7 @@ end
 .heroTopRightContent h5{
     font-size: 13px;
     color: #fff;
-    border-left: 1px solid red;
+    border-left: 1px solid green;
     padding-left: 5px;
 }
 .heroTopRightCover{
@@ -708,7 +708,7 @@ end
 .heroBottomLeftContent h5{
     font-size: 13px;
     color: #fff;
-    border-left: 1px solid #fff;
+    border-left: 1px solid skyblue;
     padding-left: 5px;
 }
 .heroBottomLeftCover{
@@ -830,14 +830,12 @@ NAVIGATION
         justify-content: space-between;
     }
     .logo img{
-        /* position: absolute; */
         left: 160px;
         top: 11px;
         height: 30px;
     }
     .signin{
         position: absolute;
-        /* left: 22px; */
         top: 11px;
         height: 30px;
         padding-right: 1px;
@@ -883,18 +881,11 @@ NAVIGATION
 
     .navContainerBottom{
         height: 20vw;
-        /* position: relative; */
-        /* padding-top: 5px; */
-        /* margin-bottom: 20px; */
     }
     .navBootomContainer{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* grid-template-columns: repeat(3, 1fr);
-        row-gap: 20px;
-        place-content: center;
-        width: 80%; */
     }
     .small{
         display: block;
@@ -906,9 +897,142 @@ NAVIGATION
     #hideMenu{
         margin-top: -20px;
     }
-    /*======= WELCOME SECTION ======= */
+    /*
+    =============== 
+    WELCOME SECTION 
+    ===============
+    */
     .bbcWelcome{
         display: none;
+    }
+
+    /*
+    ========== 
+    HERO SECTION
+    ==========
+    */
+
+    /*======= HERO CONTAINER ONE =========*/
+    .heroOneImg img{
+        width: 460px;
+        height: 357px;
+        object-fit: cover;
+    }
+    .heroOneContentContainer{
+        position: absolute;
+        top: 210px;
+        left: 10px;
+        z-index: 10;
+    }
+    .heroTopCover{
+        top: 1px;
+        position: absolute;
+        width: 460px;
+        height: 356px;
+    }
+    .heroContainerOne{
+        margin-bottom: 10px;
+    }
+    /*======= HERO CONTAINER TWO =========*/
+    .heroContainerTwo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 19px;
+        place-self: center;
+        row-gap: 5px;
+    }
+
+    /* HERO CONTENT TOP LEFT */
+    .heroTwoTopLeftImg img{
+        width: 220px;
+        height: 150px;
+    }
+    .heroTopleftContent{
+        position: absolute;
+        top: 78px;
+        z-index: 10;
+    }
+    .heroTopleftContent h1{
+        font-size: 15px;
+    }
+    .heroTopleftContent h5{
+        font-size: 12px;
+    }
+    .heroTopleftCover{
+        top: 1px;
+        position: absolute;
+        width: 220px;
+        height: 150px;
+    }
+
+    /* HERO CONTENT TOP RIGHT */
+    .heroTwoTopRightImg img{
+        width: 220px;
+        height: 150px;
+    }
+    .heroTopRightContent{
+        position: absolute;
+        top: 78px;
+        left: 10px;
+    }
+    .heroTopRightContent h1{
+        font-size: 15px;
+    }
+    .heroTopRightContent h5{
+        font-size: 12px;
+    }
+    .heroTopRightCover{
+        top: 1px;
+        position: absolute;
+        width: 220px;
+        height: 150px;
+    }
+
+    /* HERO CONTENT BOTTOM LEFT */
+    .heroTwoBottomLeftImg img{
+        width: 220px;
+        height: 150px;
+    }
+    .heroBottomLeftContent{
+        position: absolute;
+        top: 78px;
+        z-index: 10;
+    }
+    .heroBottomLeftContent h1{
+        font-size: 15px;
+    }
+    .heroBottomLeftContent h5{
+        font-size: 12px;
+    }
+    .heroBottomLeftCover{
+        top: 1px;
+        position: absolute;
+        width: 220px;
+        height: 150px;
+    }
+    
+
+    /* HERO CONTENT BOTTOM RIGHT */
+    .heroTwoBottomRightImg img{
+        width: 220px;
+        height: 150px;
+    }
+    .heroBottomRightContent{
+        position: absolute;
+        top: 78px;
+        z-index: 10;
+    }
+    .heroBottomRightContent h1{
+        font-size: 15px;
+    }
+    .heroBottomRightContent h5{
+        font-size: 12px;
+    }
+    .heroBottomRightCover{
+        top: 1px;
+        position: absolute;
+        width: 220px;
+        height: 150px;
     }
 }
 
@@ -965,11 +1089,125 @@ NAVIGATION
     .navBootomContainer{
         display: flex;
         align-items: center;
-        /* justify-content: space-around; */
         margin: 0 5px;
         flex-wrap: wrap;
     }
     .small{
         display: block;
     }
+    /*======= HERO SECTION ======= */
+    /*======= HERO CONTAINER ONE =========*/
+    /* .heroOneImg img{
+        width: 760px;
+        height: 357px;
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .heroTopCover{
+        top: 1px;
+        position: absolute;
+        width: 760px;
+        height: 356px;
+    } */
+
+    /*======= HERO CONTAINER TWO =========*/
+    /* .heroContainerTwo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 29px;
+        margin-top: 10px;
+    } */
+    /* HERO CONTENT TOP LEFT */
+    /* .heroTwoTopLeftImg img{
+        width: 365px;
+        height: 190px;
+    }
+    .heroTopleftContent{
+        position: absolute;
+        top: 115px;
+        z-index: 10;
+    }
+    .heroTopleftContent h1{
+        font-size: 15px;
+    }
+    .heroTopleftContent h5{
+        font-size: 12px;
+    }
+    .heroTopleftCover{
+        top: 1px;
+        position: absolute;
+        width: 365px;
+        height: 190px;
+    } */
+
+    /* HERO CONTENT TOP RIGHT */
+    /* .heroTwoTopRightImg img{
+        width: 365px;
+        height: 190px;
+    }
+    .heroTopRightContent{
+        position: absolute;
+        top: 115px;
+        left: 10px;
+    }
+    .heroTopRightContent h1{
+        font-size: 15px;
+    }
+    .heroTopRightContent h5{
+        font-size: 12px;
+    }
+    .heroTopRightCover{
+        top: 1px;
+        position: absolute;
+        width: 365px;
+        height: 190px;
+    } */
+
+    /* HERO CONTENT BOTTOM LEFT */
+    /* .heroTwoBottomLeftImg img{
+        width: 365px;
+        height: 190px;
+    }
+    .heroBottomLeftContent{
+        position: absolute;
+        top: 115px;
+        z-index: 10;
+    }
+    .heroBottomLeftContent h1{
+        font-size: 15px;
+    }
+    .heroBottomLeftContent h5{
+        font-size: 12px;
+    }
+    .heroBottomLeftCover{
+        top: 1px;
+        position: absolute;
+        width: 365px;
+        height: 190px;
+    } */
+    
+
+    /* HERO CONTENT BOTTOM RIGHT */
+    /* .heroTwoBottomRightImg img{
+        width: 365px;
+        height: 190px;
+    }
+    .heroBottomRightContent{
+        position: absolute;
+        top: 115px;
+        z-index: 10;
+    }
+    .heroBottomRightContent h1{
+        font-size: 15px;
+    }
+    .heroBottomRightContent h5{
+        font-size: 12px;
+    }
+    .heroBottomRightCover{
+        top: 1px;
+        position: absolute;
+        width: 365px;
+        height: 190px;
+    } */
 }
