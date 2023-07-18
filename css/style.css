@@ -597,6 +597,10 @@ end
     border-left: 1px solid red;
     padding-left: 5px;
     height: 15px;
+    transition: all 2s ease;
+}
+.heroOneContentContainer h5:hover{
+    text-decoration: underline;
 }
 
 .heroTopCover{
@@ -604,7 +608,13 @@ end
     position: absolute;
     width: 690px;
     height: 356px;
+    transition: all 0.6s ease-in-out;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+}
+.heroTopCover:hover{
+    top: 1px;
+    position: absolute;
+    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
 }
 
 /*======= HERO CONTAINER TWO =========*/
@@ -629,6 +639,7 @@ end
     left: 10px;
     z-index: 10;
 }
+
 .heroTopleftContent h1{
     font-size: 17px;
     margin-bottom: 10px;
@@ -641,12 +652,20 @@ end
     border-left: 1px solid blue;
     padding-left: 5px;
 }
+.heroTopleftContent h5:hover{
+    text-decoration: underline;
+}
 .heroTopleftCover{
     top: 1px;
     position: absolute;
     width: 290px;
     height: 170px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+}
+.heroTopleftCover:hover{
+    top: 1px;
+    position: absolute;
+    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
 }
 
 /* HERO CONTENT TOP RIGHT */
@@ -676,6 +695,9 @@ end
     border-left: 1px solid green;
     padding-left: 5px;
 }
+.heroTopRightContent h5:hover{
+    text-decoration: underline;
+}
 .heroTopRightCover{
     top: 1px;
     position: absolute;
@@ -683,7 +705,11 @@ end
     height: 170px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
 }
-
+.heroTopRightCover:hover{
+    top: 1px;
+    position: absolute;
+    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
+}
 /* HERO CONTENT BOTTOM LEFT */
 .heroTwoBottomLeftContent{
     position: relative;
@@ -711,12 +737,18 @@ end
     border-left: 1px solid skyblue;
     padding-left: 5px;
 }
+.heroBottomLeftContent h5:hover{
+    text-decoration: underline;
+}
 .heroBottomLeftCover{
     top: 1px;
     position: absolute;
     width: 290px;
     height: 170px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+}
+.heroBottomLeftCover:hover{
+    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
 }
 
 /* HERO CONTENT BOTTOM RIGHT */
@@ -746,12 +778,18 @@ end
     border-left: 1px solid orangered;
     padding-left: 5px;
 }
+.heroBottomRightContent h5:hover{
+    text-decoration: underline;
+}
 .heroBottomRightCover{
     top: 1px;
     position: absolute;
     width: 290px;
     height: 170px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+}
+.heroBottomRightCover:hover{
+    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
 }
 
 
