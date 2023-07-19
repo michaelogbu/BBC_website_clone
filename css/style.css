@@ -737,7 +737,7 @@ end
 .heroBottomLeftContent h5{
     font-size: 13px;
     color: #fff;
-    border-left: 1px solid skyblue;
+    border-left: 1px solid yellow;
     padding-left: 5px;
 }
 .heroBottomLeftContent h5:hover{
@@ -820,6 +820,33 @@ NEWS SECTION
     padding-left: 5px;
     margin-bottom: 20px;
 }
+.sportHeader{
+    font-size: 23px;
+    color: #333;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-left: 3px solid yellow;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.newsHeader{
+    font-size: 23px;
+    color: #333;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-left: 3px solid red;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.worklifeHeader{
+    font-size: 23px;
+    color: #333;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-left: 3px solid blue;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
 .newsContentContainer{
     /* border: 1px solid green; */
     display: flex;
@@ -857,6 +884,7 @@ NEWS SECTION
     text-decoration: underline;
 }
 .newsLeftCover{
+    cursor: pointer;
     left: 15px;
     top: 72px;
     position: absolute;
@@ -870,6 +898,7 @@ NEWS SECTION
 }
 
 .newsMiddleCover{
+    cursor: pointer;
     left: 447px;
     top: 72px;
     position: absolute;
@@ -883,6 +912,7 @@ NEWS SECTION
 }
 
 .newsRightCover{
+    cursor: pointer;
     left: 879px;
     top: 72px;
     position: absolute;
@@ -954,6 +984,7 @@ NAVIGATION
 @media screen and (max-width: 500px) {
     .navContainer{
         position: relative;
+        width: 100%;
     }
     .navContainerTop{
         margin-bottom: -10px;
@@ -1165,6 +1196,47 @@ NAVIGATION
         position: absolute;
         width: 220px;
         height: 150px;
+    }
+    /* 
+    ============
+    NEWS SECTION 
+    ============
+    */
+    .newsContentContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* position: relative; */
+    }
+    .newscontent{
+        width: 460px;
+        margin-bottom: 10px;
+        /* border: 1px solid red; */
+    }
+    .newscontent img{
+        width: 458px;
+        height: 210px;
+        margin-bottom: 5px;
+    }
+    .newsContent h1{
+        margin-bottom: 5px;
+    }
+    .newsContent p{
+        margin-bottom: 5px;
+    }
+    .newsLeftCover{
+        left: -1px;
+        top: 73px;
+        width: 460px;
+    }
+    .newsMiddleCover{
+        left: -1px;
+        top: 405px;
+        width: 460px;
+    }
+    .newsRightCover{
+        left: -1px;
+        top: 736px;
+        width: 460px;
     }
 }
 
