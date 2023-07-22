@@ -1006,18 +1006,93 @@ WEATHER SECTION
     font-weight: 600;
 }
 
+/* 
+============
+REEL SECTION 
+============
+*/
+.reelContainer{
+    display: grid;
+    place-items: center;
+    /* border: 1px solid blue; */
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/reel.png);
+}
+.reelContentContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.reelHeadContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
 
+}
+.reelHeadLeft h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.reelHeadLeft p{
+    color: #fff;
+    /* text-transform: uppercase; */
+    font-size: 17px;
+}
+.reelHeadRight button{
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 17px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.reelHeadRight button:hover{
+    background-color: #222;
+}
 
-
-
-
-
-
-
-
-
-
-
+.reelContentBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reelContentBodyContainer{
+    width: 362px;
+    position: relative;
+}
+.reelContentBodyContainer img{
+    width: 362px;
+    height: 180px;
+}
+.reelContentBodyContainer p{
+    padding: 10px;
+    background-color: #fff;
+    font-size: 17px;
+    color: #222;
+    font-weight: 600;
+    margin-top: -5px;
+}
+.reelCover{
+    width: 362px;
+    height: 180px;
+    background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0,0,0,0.247));
+    position: absolute;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+}
+.reelCover:hover{
+    opacity: 0;
+}
 
 
 
