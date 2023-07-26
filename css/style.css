@@ -610,12 +610,11 @@ end
     width: 680px;
     height: 356px;
     transition: all 0.6s ease-in-out;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
 .heroTopCover:hover{
     top: 1px;
-    position: absolute;
-    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
+    opacity: 0;
 }
 
 /*======= HERO CONTAINER TWO =========*/
@@ -662,12 +661,12 @@ end
     position: absolute;
     width: 290px;
     height: 170px;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
 .heroTopleftCover:hover{
     top: 1px;
-    position: absolute;
-    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
+    opacity: 0;
 }
 
 /* HERO CONTENT TOP RIGHT */
@@ -706,12 +705,12 @@ end
     position: absolute;
     width: 290px;
     height: 170px;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
 .heroTopRightCover:hover{
     top: 1px;
-    position: absolute;
-    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
+    opacity: 0;
 }
 /* HERO CONTENT BOTTOM LEFT */
 .heroTwoBottomLeftContent{
@@ -749,10 +748,11 @@ end
     position: absolute;
     width: 290px;
     height: 170px;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
 .heroBottomLeftCover:hover{
-    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
+    opacity: 0;
 }
 
 /* HERO CONTENT BOTTOM RIGHT */
@@ -792,12 +792,10 @@ end
     width: 290px;
     height: 170px;
     transition: all 0.6s ease-in-out;
-    /* background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253)); */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6));
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
 .heroBottomRightCover:hover{
-    /* opacity: 0; */
-    background-image: linear-gradient(rgba(39, 38, 38, 0.432), rgba(39, 38, 38, 0.432));
+    opacity: 0;
 }
 
 /* 
