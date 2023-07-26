@@ -1382,6 +1382,26 @@ NAVIGATION
         top: 736px;
         width: 460px;
     }
+    /* 
+    ============
+    REEL SECTION 
+    ============
+    */
+    .reelContainer{
+        display: grid;
+        place-items: center;
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 900px;
+    }
+    .reelContentBody{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reelContentBodyContainer{
+        margin-bottom: 10px;
+    }
 }
 
 /* ====== MIDDIUM SCREEN DEVICES =======*/
