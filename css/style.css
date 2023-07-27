@@ -499,14 +499,14 @@ HERO SECTION
 }
 .heroOneContentContainer h5{
     font-size: 15px;
-    color: #fff;
+    color: #bbb;
     border-left: 1px solid red;
     padding-left: 5px;
     height: 15px;
 }
 .heroOneContentContainer h5:hover{
     text-decoration: underline;
-    color: #bbb;
+    color: #fff;
 }
 .heroTopCover{
     top: 1px;
@@ -1288,20 +1288,30 @@ NAVIGATION
     /*======= HERO CONTAINER ONE =========*/
     .heroOneImg img{
         width: 460px;
-        height: 357px;
+        height: 257px;
         object-fit: cover;
     }
     .heroOneContentContainer{
         position: absolute;
-        top: 210px;
+        top: 170px;
         left: 10px;
         z-index: 10;
+    }
+    .heroOneContentContainer h1{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .heroOneContentContainer p{
+        display: none;
+    }
+    .heroOneContentContainer h5{
+        font-size: 13px;
     }
     .heroTopCover{
         top: 1px;
         position: absolute;
         width: 460px;
-        height: 356px;
+        height: 256px;
     }
     .heroContainerOne{
         margin-bottom: 10px;
@@ -1311,7 +1321,7 @@ NAVIGATION
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 19px;
-        place-self: center;
+        place-items: center;
         row-gap: 5px;
     }
 
@@ -1420,7 +1430,7 @@ NAVIGATION
         width: 460px;
         margin-bottom: 15px;
         padding-bottom: 5px;
-        border-bottom: 2px solid #837d7d;
+        border-bottom: 1px solid #bbb;
     }
     .newsLeftCover{
         display: none;
@@ -1454,7 +1464,7 @@ NAVIGATION
         width: 460px;
         margin-bottom: 15px;
         padding-bottom: 5px;
-        border-bottom: 2px solid #837d7d;
+        border-bottom: 1px solid #bbb;
     }
     .sportLeftCover{
         display: none;
@@ -1475,6 +1485,41 @@ NAVIGATION
     .sportRightCover{
         display: none;
     }
+
+
+    /* 
+    ================
+    WORKLIFE SECTION 
+    ================
+    */
+    .worklifeContentContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .worklifecontent{
+        width: 460px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #bbb;
+    }
+    .worklifecontent img{
+        display: none;
+    }
+    .worklifeLeftCover{
+        display: none;
+    }
+    .worklifeContent p{
+        display: none;
+    }
+    .worklifeMiddleCover{
+        display: none;
+    }
+    .worklifeRightCover{
+        display: none;
+    }
+
+
+
 
 
 
