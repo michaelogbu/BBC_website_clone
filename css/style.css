@@ -1083,7 +1083,7 @@ REEL SECTION
     /* border: 1px solid blue; */
     margin-top: 40px;
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1099,7 +1099,7 @@ REEL SECTION
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 10px 0;
 
 }
 .reelHeadLeft h1{
@@ -1136,19 +1136,22 @@ REEL SECTION
     width: 362px;
     position: relative;
 }
-.reelContentBodyContainer img{
-    width: 362px;
-    height: 180px;
+.reelContentBodyContainer video{
+    width: 360px;
+    height: 280px;
+    outline: none;
+    /* border: 1px solid #333; */
 }
 .reelContentBodyContainer p{
-    padding: 10px;
+    padding: 5px;
     background-color: #fff;
-    font-size: 17px;
+    font-size: 14px;
     color: #222;
     font-weight: 600;
     margin-top: -5px;
+    width: 360px;
 }
-.reelCover{
+/* .reelCover{
     width: 362px;
     height: 180px;
     background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0,0,0,0.247));
@@ -1158,7 +1161,7 @@ REEL SECTION
 }
 .reelCover:hover{
     opacity: 0;
-}
+} */
 
 
 
@@ -1533,7 +1536,7 @@ NAVIGATION
         place-items: center;
         /* border: 1px solid blue; */
         width: 100%;
-        height: 900px;
+        height: 970px;
     }
     .reelContentBody{
         display: grid;
@@ -1542,6 +1545,15 @@ NAVIGATION
     }
     .reelContentBodyContainer{
         margin-bottom: 10px;
+    }
+    .reelContentBodyContainer video{
+        width: 320px;
+        height: 240px;
+        outline: none;
+        /* border: 1px solid #333; */
+    }
+    .reelContentBodyContainer p{
+        width: 320px;
     }
 }
 
