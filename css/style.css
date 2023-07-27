@@ -13,8 +13,9 @@
 }
 .active{
     display: block;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
+
 /*
 ========== 
 NAVIGATION
@@ -37,6 +38,7 @@ nav{
     margin-bottom: 5px;
 }
 
+/*========= LOGO ===========*/
 .logo img{
     height: 45px;
     margin-right: 6px;
@@ -77,12 +79,14 @@ nav{
 }
 /*========= end ===========*/
 
+/*======= NAV HORIZONTAL LINE ========*/
 .navhoriLine{
     border-right: 1px solid #363434;
     height: 30px;
     margin: 0px 10px;
 }
 
+/*========== NAV LINKS =========*/
 .navLinkContainer{
     display: flex;
     align-items: center;
@@ -119,11 +123,7 @@ nav{
 /*========= end ===========*/
 
 
-/*
---------
-newsLink
---------
-*/
+/*===== newsLinK ======*/
 #news{
     position: relative;
 }
@@ -141,17 +141,8 @@ newsLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-sportLink
----------
-*/
+/*===== sportLink ======*/
 #sport{
     position: relative;
 }
@@ -169,17 +160,8 @@ sportLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-reelLink
----------
-*/
+/*===== reelLink ======*/
 #reel{
     position: relative;
 }
@@ -197,17 +179,8 @@ reelLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-worklifeLink
----------
-*/
+/*===== worklifeLink ======*/
 #worklife{
     position: relative;
 }
@@ -225,17 +198,8 @@ worklifeLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-travelLink
----------
-*/
+/*===== travelLink ======*/
 #travel{
     position: relative;
 }
@@ -253,17 +217,8 @@ travelLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-futureLink
----------
-*/
+/*===== futureLink ======*/
 #future{
     position: relative;
 }
@@ -281,17 +236,8 @@ futureLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-cultureLink
----------
-*/
+/*===== cultureLink ======*/
 #culture{
     position: relative;
 }
@@ -309,13 +255,8 @@ cultureLink
     width: 100%;
     transition: all 0.3s ease-in;
 }
-/*
-----
-end
-----
-*/
 
-
+/*===== NAV SHOW MENU ======*/
 .bar{
     width: 30px;
     height: 30px;
@@ -351,12 +292,8 @@ dotsLink
     width: 100%;
     transition: all 0.3s ease;
 }
-/*
-----
-end
-----
-*/
 
+/*======== NAV SEARCH ========*/
 .navSearch{
     display: flex;
     align-items: center;
@@ -379,13 +316,13 @@ end
     text-align: left;
 }
 
+/*========== NAV VATICAL LINE ========*/
 .navVatiiLine{
     border-bottom: 1px solid #363434;
     width: 95%;
 }
 
-
-
+/*===== NAV BOTTOM CONTAINER =======*/
 .navContainerBottom{
     display: none;
     align-items: center;
@@ -400,7 +337,6 @@ end
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 .small{
     display: none;
@@ -413,15 +349,11 @@ end
     font-size: 15px;
     font-weight: 700;
 }
-/*
----------
-tvLink
----------
-*/
+
+/*===== tvLink =======*/
 #tv{
     position: relative;
 }
-
 #tv::after{
     position: absolute;
     content: "";
@@ -436,20 +368,11 @@ tvLink
     width: 100%;
     transition: all 0.3s ease;
 }
-/*
-----
-end
-----
-*/
-/*
----------
-weatherLink
----------
-*/
+
+/*===== weatherLink =======*/
 #weather{
     position: relative;
 }
-
 #weather::after{
     position: absolute;
     content: "";
@@ -464,20 +387,11 @@ weatherLink
     width: 100%;
     transition: all 0.3s ease;
 }
-/*
-----
-end
-----
-*/
-/*
----------
-tvLink
----------
-*/
+
+/*===== soundsLink =======*/
 #sounds{
     position: relative;
 }
-
 #sounds::after{
     position: absolute;
     content: "";
@@ -492,21 +406,11 @@ tvLink
     width: 100%;
     transition: all 0.3s ease;
 }
-/*
-----
-end
-----
-*/
 
-/*
----------
-timesLink
----------
-*/
+/*===== timesLink =======*/
 #hideMenu{
     position: relative;
 }
-
 #hideMenu::after{
     position: absolute;
     content: "";
@@ -521,17 +425,16 @@ timesLink
     width: 100%;
     transition: all 0.3s ease;
 }
-/*
-----
-end
-----
-*/
 .times{
     height: 30px;
     cursor: pointer;
 }
 
-/*======= WELCOME SECTION ======= */
+/*
+=============== 
+WELCOME SECTION 
+=============== 
+*/
 .bbcWelcome{
     padding-top: 20px;
     display: flex;
@@ -552,10 +455,13 @@ end
     margin-right: 10px;
 }
 
-/*======= HERO SECTION ======= */
+/*
+============ 
+HERO SECTION 
+============ 
+*/
 .heroContainer{
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -597,13 +503,11 @@ end
     border-left: 1px solid red;
     padding-left: 5px;
     height: 15px;
-    /* transition: all 2s ease; */
 }
 .heroOneContentContainer h5:hover{
     text-decoration: underline;
     color: #bbb;
 }
-
 .heroTopCover{
     top: 1px;
     position: absolute;
@@ -639,7 +543,6 @@ end
     left: 10px;
     z-index: 10;
 }
-
 .heroTopleftContent h1{
     font-size: 17px;
     margin-bottom: 10px;
@@ -731,7 +634,6 @@ end
     font-size: 17px;
     margin-bottom: 10px;
     color: #fff;
-
 }
 .heroBottomLeftContent h5{
     font-size: 13px;
@@ -774,7 +676,6 @@ end
     font-size: 17px;
     margin-bottom: 10px;
     color: #fff;
-
 }
 .heroBottomRightContent h5{
     font-size: 13px;
@@ -807,7 +708,6 @@ NEWS SECTION
     display: flex;
     flex-direction: column;
     padding-top: 25px;
-    position: relative;
 }
 .newsHeader{
     font-size: 23px;
@@ -817,6 +717,94 @@ NEWS SECTION
     border-left: 3px solid red;
     padding-left: 5px;
     margin-bottom: 20px;
+}
+.newsContentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*====== newscontentOne =========*/
+.newscontent{
+    width: 402px;
+    position: relative;
+}
+.newsLeftCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.newsLeftCover:hover{
+    opacity: 0;
+}
+.newscontent img{
+    width: 400px;
+    height: 210px;
+    margin-bottom: 10px;
+}
+.newscontent h1{
+    font-size: 19px;
+    color: #222;
+    margin-bottom: 10px;
+}
+.newscontent p{
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.newscontent h6{
+    font-size: 13px;
+    color: #222;
+    border-left: 1px solid red;
+    padding-left: 5px;
+    font-weight: 600;
+}
+.newscontent h6:hover{
+    text-decoration: underline;
+}
+/*====== newscontentTwo =========*/
+.newsMiddleCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.newsMiddleCover:hover{
+    opacity: 0;
+}
+/*====== newscontentThree =========*/
+.newsRightCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.newsRightCover:hover{
+    opacity: 0;
+}
+
+/* 
+==============
+SPORTS SECTION 
+==============
+*/
+.sportsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
 }
 .sportHeader{
     font-size: 23px;
@@ -827,99 +815,179 @@ NEWS SECTION
     padding-left: 5px;
     margin-bottom: 20px;
 }
-.newsHeader{
-    font-size: 23px;
-    color: #333;
-    font-weight: 700;
-    text-transform: capitalize;
-    border-left: 3px solid red;
+.sportContentContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/*====== sportcontentOne =========*/
+.sportcontent{
+    width: 402px;
+    position: relative;
+}
+.sportcontent img{
+    width: 400px;
+    height: 210px;
+    margin-bottom: 10px;
+}
+.sportLeftCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.sportLeftCover:hover{
+    opacity: 0;
+}
+.sportContent h1{
+    font-size: 19px;
+    color: #222;
+    margin-bottom: 10px;
+}
+.sportContent p{
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.sportContent h6{
+    font-size: 13px;
+    color: #222;
+    border-left: 1px solid yellow;
     padding-left: 5px;
-    margin-bottom: 20px;
+    font-weight: 600;
+}
+.sportContent h6:hover{
+    text-decoration: underline;
+}
+/*====== sportcontentTwo =========*/
+.sportMiddleCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.sportMiddleCover:hover{
+    opacity: 0;
+}
+/*====== sportcontentThree =========*/
+.sportRightCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.sportRightCover:hover{
+    opacity: 0;
+}
+
+/* 
+================
+WORKLIFE SECTION 
+================
+*/
+.worklifeContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
 }
 .worklifeHeader{
     font-size: 23px;
     color: #333;
     font-weight: 700;
     text-transform: capitalize;
-    border-left: 3px solid blue;
+    border-left: 3px solid orangered;
     padding-left: 5px;
     margin-bottom: 20px;
 }
-.newsContentContainer{
-    /* border: 1px solid green; */
+.worklifeContentContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
-.newscontent{
+/*====== worklifecontentOne =========*/
+.worklifecontent{
     width: 402px;
+    position: relative;
 }
-.newscontent img{
+.worklifecontent img{
     width: 400px;
     height: 210px;
     margin-bottom: 10px;
 }
-.newsContent h1{
+.worklifeLeftCover{
+    cursor: pointer;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    transition: all 0.6s ease-in-out;
+    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
+}
+.worklifeLeftCover:hover{
+    opacity: 0;
+}
+.worklifeContent h1{
     font-size: 19px;
     color: #222;
     margin-bottom: 10px;
 }
-.newsContent p{
+.worklifeContent p{
     font-size: 15px;
     color: #222;
     margin-bottom: 10px;
     font-weight: 500;
 }
-.newsContent h6{
+.worklifeContent h6{
     font-size: 13px;
     color: #222;
-    border-left: 1px solid red;
+    border-left: 1px solid orangered;
     padding-left: 5px;
     font-weight: 600;
 }
-.newsContent h6:hover{
+.worklifeContent h6:hover{
     text-decoration: underline;
 }
-.newsLeftCover{
+/*====== worklifecontentTwo =========*/
+.worklifeMiddleCover{
     cursor: pointer;
-    left: 15px;
-    top: 72px;
+    left: 1px;
+    top: 1px;
     position: absolute;
     width: 400px;
     height: 210px;
     transition: all 0.6s ease-in-out;
     background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
-.newsLeftCover:hover{
+.worklifeMiddleCover:hover{
     opacity: 0;
 }
-
-.newsMiddleCover{
+/*====== worklifecontentThree =========*/
+.worklifeRightCover{
     cursor: pointer;
-    left: 447px;
-    top: 72px;
+    left: 1px;
+    top: 1px;
     position: absolute;
     width: 400px;
     height: 210px;
     transition: all 0.6s ease-in-out;
     background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
 }
-.newsMiddleCover:hover{
-    opacity: 0;
-}
-
-.newsRightCover{
-    cursor: pointer;
-    left: 879px;
-    top: 72px;
-    position: absolute;
-    width: 400px;
-    height: 210px;
-    transition: all 0.6s ease-in-out;
-    background-image: linear-gradient(rgba(99, 96, 96, 0.253), rgba(99, 96, 96, 0.253));
-}
-.newsRightCover:hover{
+.worklifeRightCover:hover{
     opacity: 0;
 }
 
@@ -1347,39 +1415,69 @@ NAVIGATION
     .newsContentContainer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* position: relative; */
     }
     .newscontent{
         width: 460px;
-        margin-bottom: 10px;
-        /* border: 1px solid red; */
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #837d7d;
+    }
+    .newsLeftCover{
+        display: none;
     }
     .newscontent img{
-        width: 458px;
-        height: 210px;
-        margin-bottom: 5px;
+        display: none;
     }
     .newsContent h1{
         margin-bottom: 5px;
     }
     .newsContent p{
-        margin-bottom: 5px;
+        display: none;
     }
-    .newsLeftCover{
-        left: -1px;
-        top: 73px;
-        width: 460px;
-    }
+    
     .newsMiddleCover{
-        left: -1px;
-        top: 405px;
-        width: 460px;
+        display: none;
     }
     .newsRightCover{
-        left: -1px;
-        top: 736px;
-        width: 460px;
+        display: none;
     }
+     /* 
+    ============
+    SPORTS SECTION 
+    ============
+    */
+    .sportContentContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sportcontent{
+        width: 460px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #837d7d;
+    }
+    .sportLeftCover{
+        display: none;
+    }
+    .sportcontent img{
+        display: none;
+    }
+    .sportContent h1{
+        margin-bottom: 5px;
+    }
+    .sportContent p{
+        display: none;
+    }
+    
+    .sportMiddleCover{
+        display: none;
+    }
+    .sportRightCover{
+        display: none;
+    }
+
+
+
     /* 
     ============
     REEL SECTION 
