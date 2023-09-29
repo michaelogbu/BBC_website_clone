@@ -7,6 +7,9 @@
     text-decoration: none;
     outline: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .contain{
     width: 95%;
     margin: 0 auto;
@@ -1261,7 +1264,7 @@ AFRICAN NEWS SECTION
 NAVIGATION
 ==========
 */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1040px) {
     .navContainer{
         position: relative;
         width: 100%;
@@ -1621,6 +1624,30 @@ NAVIGATION
     }
     .reelContentBodyContainer p{
         width: 320px;
+    }
+
+    /* 
+    ====================
+    AFRICAN NEWS SECTION 
+    ====================
+    */
+    .africaNewsContentContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .africaNewsContent{
+        border: 1px dotted red;
+        width: 400px;
+    }
+    .afContentNon{
+        display: none;
+    }
+    .africaNewsContent img{
+        width: 400px;
+        height: 250px;
+        margin-bottom: 5px;
+        object-fit: cover;
     }
 }
 
